@@ -49,7 +49,7 @@
     <header>
         
         <!-- Navbar -->
-        <nav class="navbar md:px-10 lg:px-12 bg-[#F85559] container mx-auto rounded-[37rem] my-8">
+        <!-- <nav class="navbar md:px-10 lg:px-12 bg-[#F85559] container mx-auto rounded-[37rem] my-8">
   <div class="navbar-start">
     <div class="navbar-center lg:flex">
     <ul class="menu menu-horizontal  text-[#FFF] md:text-lg  lg:text-xl px-1 font-medium">
@@ -67,13 +67,13 @@
     <input type="text" placeholder="Search here" class="input input-primary border-none w-full max-w-xs rounded-3xl px-8"/>
     <i class="fa-solid fa-magnifying-glass absolute right-8"></i> 
   </div>
-        </nav>
+        </nav> -->
         <!-- Banner Section -->
-        <section class="container mx-auto  py-8 relative">
+        <section class="container mx-auto  py-8 relative px-4">
             <div class="carousel w-full">
                 <!-- Carousel-1 -->
   <div id="slide1" class="carousel-item relative w-full ">
-    <div class="hero min-h-[11rem] md:min-h-[40rem] " style="background-image:url(./images/banner1.png);">
+    <div class="hero " style="background-image:url(./images/banner1.png);">
     <div class="hero-overlay bg-opacity-70"></div>
     <div class="hero-content text-center text-neutral-content">
     <div>
@@ -140,26 +140,26 @@
   </div>
 </div>
     <!--  Featured fruits section -->
-        <div class="flex justify-evenly absolute inset-x-0 top-3/4 w-4/5 mx-auto text-center bg-white py-8 opacity-0 md:opacity-100">
+        <div class=" hidden md:flex px-8 justify-evenly items-center absolute inset-x-0 top-3/4 w-4/5 mx-auto text-center bg-white py-8">
             <div>
                 <img src="./images/fruit1.png" alt="">
-                <p>Strawberry</p>
+                <p class=" text-sm lg:text-xl font-medium">Strawberry</p>
             </div>
             <div>
                 <img src="./images/fruit2.png" alt="">
-                <p>Orange</p>
+                <p class="lg:text-xl font-medium">Orange</p>
             </div>
             <div>
                 <img src="./images/fruit3.png" alt="">
-                <p>Mango</p>
+                <p class="lg:text-xl font-medium">Mango</p>
             </div>
             <div>
                 <img src="./images/fruit4.png" alt="">
-                <p>Strawberry</p>
+                <p class="lg:text-xl font-medium">Strawberry</p>
             </div>
             <div>
                 <img src="./images/fruit5.png" alt="">
-                <p>Pomegranate</p>
+                <p class="lg:text-xl font-medium">Pomegranate</p>
             </div>
             
         </div>
@@ -170,7 +170,44 @@
 
     <!-- Main section starts here -->
     <main>
-
+        <!-- Deal of the day section -->
+        <section>
+            <div class="flex justify-between container mx-auto  py-40 px-4">
+                <div class="flex-1">
+                <h2>Deal of the day</h2>
+                <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div class="flex-1">
+                <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+  <div class="flex flex-col">
+    <span class="countdown font-mono text-5xl">
+      <span style="--value:15;"></span>
+    </span>
+    days
+  </div> 
+  <div class="flex flex-col">
+    <span class="countdown font-mono text-5xl">
+      <span style="--value:10;"></span>
+    </span>
+    hours
+  </div> 
+  <div class="flex flex-col">
+    <span class="countdown font-mono text-5xl">
+      <span style="--value:24;"></span>
+    </span>
+    min
+  </div> 
+  <div class="flex flex-col">
+    <span class="countdown font-mono text-5xl">
+      <span style="--value:23;"></span>
+    </span>
+    sec
+  </div>
+</div>
+            </div>
+            </div>
+            
+        </section>
     </main>
 
      <!-- Main section ends here -->
